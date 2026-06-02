@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,
+            //スクロール方向を逆転,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -115,6 +115,13 @@
             bindings = <&msc>, <&msc>;
 
             tap-ms = <20>;
+        };
+
+        td_lang: td_lang {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LANG";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1>, <&kp LANG2>;
         };
     };
 
