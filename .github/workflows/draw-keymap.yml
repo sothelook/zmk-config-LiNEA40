@@ -1,0 +1,10 @@
+name: Draw Keymap
+
+on:
+  push:
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
