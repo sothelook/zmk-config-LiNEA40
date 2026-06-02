@@ -1,0 +1,11 @@
+name: Draw Keymap
+on: [push] # キーマップが更新されたら実行
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: caksoylar/keymap-drawer-action@v1
+        with:
+          keymap_path: "config/linea40.keymap" # あなたのファイル名
+          output_path: "keymap.svg"
