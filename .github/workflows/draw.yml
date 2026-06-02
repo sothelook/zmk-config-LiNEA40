@@ -1,0 +1,28 @@
+name: Draw Keymap
+on: [push]
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 1. キーマップ画像を生成（正しいツール名に直しました）
+      - name: Draw keymap
+        uses: caksoylar/keymap-drawer@main
+        with:
+          keymap_path: "config/LiNEA40.keymap"
+          output_path: "keymap.svg"
+
+      # 2. 生成した画像を確実に保存
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if [ -f keymap.svg ]; then
+            git add keymap.svg
+            git diff-index --quiet HEAD || (git commit -m "Update keymap diagram" && git push)
+          fi
