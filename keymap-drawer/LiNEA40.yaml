@@ -40,8 +40,8 @@ layers:
   - {t: SPACE, h: '2'}
   - {t: LANGUAGE 1, h: '4'}
   - {t: ']', h: '6'}
-  - \
   - RIGHT SHIFT
+  - '?'
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
