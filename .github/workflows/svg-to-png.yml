@@ -1,0 +1,43 @@
+name: SVG to PNG
+
+on:
+  push:
+    paths:
+      - "keymap-drawer/*.svg"
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install CairoSVG
+        run: pip install cairosvg
+
+      - name: Convert SVG to PNG
+        run: |
+          python << EOF
+          import cairosvg
+
+          cairosvg.svg2png(
+              url="keymap-drawer/LiNEA40.svg",
+              write_to="keymap-drawer/LiNEA40.png",
+              scale=2
+          )
+          EOF
+
+      - name: Commit PNG
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          git add keymap-drawer/LiNEA40.png
+
+          git diff --staged --quiet || (
+            git commit -m "Update keymap PNG"
+            git push
+          )
