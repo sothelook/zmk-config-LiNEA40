@@ -29,7 +29,11 @@ jobs:
               scale=2
           )
           EOF
-
+          
+      - name: Check files
+        run: |
+          ls -la keymap-drawer
+          
       - name: Commit PNG
         run: |
           git config user.name github-actions
