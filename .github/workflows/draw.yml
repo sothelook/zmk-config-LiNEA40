@@ -1,11 +1,24 @@
 name: Draw Keymap
-on: [push] # キーマップが更新されたら実行
+on: [push]
+
 jobs:
   draw:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 書き込み権限を明示
     steps:
       - uses: actions/checkout@v4
+
+      # 1. キーマップの画像を生成する
       - uses: caksoylar/keymap-drawer-action@v1
         with:
-          keymap_path: "config/LiNEA40.keymap" # あなたのファイル名
+          keymap_path: "config/LiNEA40.keymap"
           output_path: "keymap.svg"
+
+      # 2. 【これが足りていませんでした】できた画像をリポジトリに保存する
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add keymap.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update keymap diagram" && git push)
