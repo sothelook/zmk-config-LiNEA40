@@ -7,5 +7,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: caksoylar/keymap-drawer-action@v1
         with:
-          keymap_path: "config/linea40.keymap" # あなたのファイル名
+          keymap_path: "config/LiNEA40.keymap" # あなたのファイル名
           output_path: "keymap.svg"
