@@ -5,20 +5,24 @@ jobs:
   draw:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # 書き込み権限を明示
+      contents: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      # 1. キーマップの画像を生成する
-      - uses: caksoylar/keymap-drawer-action@v1
+      # 1. キーマップ画像を生成
+      - name: Draw keymap
+        uses: caksoylar/keymap-drawer-action@v1
         with:
           keymap_path: "config/LiNEA40.keymap"
           output_path: "keymap.svg"
 
-      # 2. 【これが足りていませんでした】できた画像をリポジトリに保存する
-      - name: Commit and push if changed
+      # 2. 生成した画像を確実に保存
+      - name: Commit and push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add keymap.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update keymap diagram" && git push)
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if [ -f keymap.svg ]; then
+            git add keymap.svg
+            git diff-index --quiet HEAD || (git commit -m "Update keymap diagram" && git push)
+          fi
