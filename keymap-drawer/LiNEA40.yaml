@@ -39,9 +39,9 @@ layers:
   - {t: LANG2, h: '2'}
   - {t: SPACE, h: '5'}
   - {t: LANGUAGE 1, h: Func}
-  - {t: LEFT ARROW, h: '6'}
+  - LEFT
   - RIGHT
-  - /
+  - {t: /, h: '6'}
   Func:
   - HOME
   - {t: ▽, type: trans}
@@ -207,9 +207,9 @@ layers:
   - {t: ▽, type: trans}
   - '&bootloader'
   - '&studio_unlock'
-  - {type: held}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: BT CLR ALL, type: held}
   '4':
   - F1
   - F2
