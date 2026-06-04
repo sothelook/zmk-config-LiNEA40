@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -197,7 +197,7 @@
 &trans    &trans                  &trans        &trans                   &trans  &trans    &trans  &trans                      &kp NUMBER_0  &kp DOT       &kp COMMA
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+            sensor-bindings = <&re_kp K_VOLUME_DOWN K_VOLUME_UP>;
         };
 
         //6
