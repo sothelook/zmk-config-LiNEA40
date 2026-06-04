@@ -30,7 +30,7 @@ layers:
   - M
   - ','
   - .
-  - /
+  - BACKSPACE
   - {t: TAB, h: LCTRL}
   - SPACE
   - LEFT ALT
@@ -41,7 +41,7 @@ layers:
   - {t: LANGUAGE 1, h: '5'}
   - {t: LEFT ARROW, h: '6'}
   - RIGHT
-  - BACKSPACE
+  - /
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
