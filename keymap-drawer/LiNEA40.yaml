@@ -35,7 +35,7 @@ layers:
   - SPACE
   - LEFT ALT
   - {t: ▽, type: trans}
-  - {t: ENTER, h: LEFT COMMAND}
+  - {t: Gui+TAB, h: LEFT COMMAND}
   - {t: LANG2, h: '2'}
   - SPACE
   - {t: LANGUAGE 1, h: '5'}
@@ -95,7 +95,7 @@ layers:
   - '*'
   - (
   - )
-  - /
+  - Gui+TAB
   - Gui+Sft+Alt+E
   - Gui+C
   - ;
@@ -105,7 +105,7 @@ layers:
   - ']'
   - '['
   - ']'
-  - {t: KP 0, h: LEFT SHIFT}
+  - LEFT SHIFT
   - KP 1
   - KP 2
   - ''''
