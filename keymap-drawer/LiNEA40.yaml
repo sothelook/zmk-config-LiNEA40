@@ -35,7 +35,7 @@ layers:
   - SPACE
   - LEFT ALT
   - {t: ▽, type: trans}
-  - {t: Gui+TAB, h: LEFT COMMAND}
+  - {t: ENTER, h: LEFT COMMAND}
   - {t: LANG2, h: '2'}
   - SPACE
   - {t: LANGUAGE 1, h: '5'}
