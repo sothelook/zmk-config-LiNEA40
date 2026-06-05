@@ -30,18 +30,18 @@ layers:
   - M
   - ','
   - .
-  - BACKSPACE
+  - /
   - {t: TAB, h: LCTRL}
   - SPACE
   - LEFT ALT
   - {t: ▽, type: trans}
-  - {t: ENTER, h: LEFT COMMAND}
+  - {t: BACKSPACE, h: LEFT COMMAND}
   - {t: LANG2, h: '2'}
-  - {t: SPACE, h: '5'}
+  - {t: SPACE, h: Sym_Num}
   - {t: LANGUAGE 1, h: Func}
   - {t: LEFT, h: '6'}
-  - RIGHT
-  - /
+  - BACKSPACE
+  - ESCAPE
   Func:
   - HOME
   - {t: ▽, type: trans}
@@ -126,7 +126,7 @@ layers:
   - PREVIOUS
   - PLAY PAUSE
   - Sft+NEXT
-  '5':
+  Sym_Num:
   - {t: ▽, type: trans}
   - Ctl+Gui+LEFT ARROW
   - UP ARROW
