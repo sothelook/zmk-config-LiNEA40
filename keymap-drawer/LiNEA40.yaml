@@ -32,8 +32,8 @@ layers:
   - .
   - /
   - LCTRL
-  - LEFT ALT
   - SPACE
+  - LEFT ALT
   - {t: ▽, type: trans}
   - {t: BACKSPACE, h: LEFT COMMAND}
   - {t: LANG2, h: '2'}
