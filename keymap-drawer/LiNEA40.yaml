@@ -31,15 +31,15 @@ layers:
   - ','
   - .
   - /
-  - {t: TAB, h: LCTRL}
-  - SPACE
+  - LCTRL
   - LEFT ALT
+  - SPACE
   - {t: ▽, type: trans}
-  - {t: BACKSPACE, h: '2'}
-  - {t: LANG2, h: LEFT COMMAND}
+  - {t: BACKSPACE, h: LEFT COMMAND}
+  - {t: LANG2, h: '2'}
   - {t: SPACE, h: Sym_Num}
   - {t: LANGUAGE 1, h: Func}
-  - {t: LEFT, h: '6'}
+  - '6'
   - TAB
   - ESCAPE
   Func:
@@ -119,8 +119,8 @@ layers:
   - '&caps_word'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PREVIOUS
