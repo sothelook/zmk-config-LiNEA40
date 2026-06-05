@@ -39,9 +39,9 @@ layers:
   - {t: LANG2, h: '2'}
   - {t: SPACE, h: '5'}
   - {t: LANGUAGE 1, h: Func}
-  - LEFT
+  - {t: LEFT, h: '6'}
   - RIGHT
-  - {t: /, h: '6'}
+  - /
   Func:
   - HOME
   - {t: ▽, type: trans}
@@ -60,7 +60,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
-  - UP
+  - {t: ▽, type: trans}
   - '&mkp MB2'
   - {t: ▽, type: trans}
   - END
@@ -69,9 +69,9 @@ layers:
   - {t: ▽, type: trans}
   - MUTE
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -81,9 +81,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
   '2':
   - '!'
   - '@'
@@ -106,8 +106,8 @@ layers:
   - '['
   - ']'
   - LEFT SHIFT
-  - KP 1
-  - KP 2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''''
   - ''''
   - '='
@@ -207,9 +207,9 @@ layers:
   - {t: ▽, type: trans}
   - '&bootloader'
   - '&studio_unlock'
+  - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BT CLR ALL, type: held}
+  - BT CLR ALL
   '4':
   - F1
   - F2
