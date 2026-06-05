@@ -40,7 +40,7 @@ layers:
   - {t: SPACE, h: Sym_Num}
   - {t: LANGUAGE 1, h: Func}
   - {t: LEFT, h: '6'}
-  - BACKSPACE
+  - TAB
   - ESCAPE
   Func:
   - HOME
