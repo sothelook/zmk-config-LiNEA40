@@ -35,8 +35,8 @@ layers:
   - SPACE
   - LEFT ALT
   - {t: ▽, type: trans}
-  - {t: BACKSPACE, h: LEFT COMMAND}
-  - {t: LANG2, h: '2'}
+  - {t: BACKSPACE, h: '2'}
+  - {t: LANG2, h: LEFT COMMAND}
   - {t: SPACE, h: Sym_Num}
   - {t: LANGUAGE 1, h: Func}
   - {t: LEFT, h: '6'}
@@ -119,8 +119,8 @@ layers:
   - '&caps_word'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PREVIOUS
