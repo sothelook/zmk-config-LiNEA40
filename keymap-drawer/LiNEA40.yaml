@@ -68,11 +68,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - MUTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PREV
+  - PLAY PAUSE
+  - NEXT
   - UP ARROW
-  - {t: ▽, type: trans}
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - PREVIOUS
   - PLAY PAUSE
-  - Sft+NEXT
+  - NEXT
   Sym_Num:
   - {t: ▽, type: trans}
   - Ctl+Gui+LEFT ARROW
