@@ -21,7 +21,7 @@ layers:
   - K
   - L
   - {t: ENTER, h: RIGHT SHIFT}
-  - {t: Z, h: LEFT SHIFT}
+  - Z
   - X
   - C
   - V
@@ -31,53 +31,53 @@ layers:
   - ','
   - .
   - /
-  - LCTRL
-  - SPACE
+  - {t: TAB, h: LEFT SHIFT}
+  - LEFT CONTROL
   - LEFT ALT
   - {t: ▽, type: trans}
   - {t: BACKSPACE, h: LEFT COMMAND}
   - {t: LANG2, h: '2'}
-  - {t: SPACE, h: Sym_Num}
+  - SPACE
   - {t: LANGUAGE 1, h: Func}
   - '6'
   - TAB
   - ESCAPE
   Func:
-  - HOME
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - +
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - {t: ▽, type: trans}
   - '&mkp MB2'
+  - BACKSPACE
   - {t: ▽, type: trans}
-  - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - MUTE
+  - '1'
+  - '2'
+  - '3'
+  - '='
   - PREV
   - PLAY PAUSE
   - NEXT
   - UP ARROW
   - MUTE
   - {t: ▽, type: trans}
+  - '0'
+  - .
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ','
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -163,7 +163,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ','
   - .
