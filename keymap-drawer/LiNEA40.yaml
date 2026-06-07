@@ -33,10 +33,10 @@ layers:
   - /
   - {t: TAB, h: LEFT SHIFT}
   - LEFT CONTROL
-  - LEFT ALT
+  - {t: LANG2, h: LEFT ALT}
   - {t: ▽, type: trans}
   - {t: BACKSPACE, h: LEFT COMMAND}
-  - {t: LANG2, h: '2'}
+  - '2'
   - SPACE
   - {t: LANGUAGE 1, h: Func}
   - '6'
@@ -126,48 +126,6 @@ layers:
   - PREVIOUS
   - PLAY PAUSE
   - NEXT
-  Sym_Num:
-  - {t: ▽, type: trans}
-  - Ctl+Gui+LEFT ARROW
-  - UP ARROW
-  - Ctl+Gui+RIGHT ARROW
-  - {t: ▽, type: trans}
-  - /
-  - '7'
-  - '8'
-  - '9'
-  - '-'
-  - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN
-  - RIGHT ARROW
-  - {t: ▽, type: trans}
-  - '*'
-  - '4'
-  - '5'
-  - '6'
-  - +
-  - HOME
-  - PAGE DOWN
-  - END
-  - PAGE UP
-  - {t: ▽, type: trans}
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ','
-  - .
-  - {t: ▽, type: trans}
   '6':
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -210,6 +168,48 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - BT CLR ALL
+  Sym_Num:
+  - {t: ▽, type: trans}
+  - Ctl+Gui+LEFT ARROW
+  - UP ARROW
+  - Ctl+Gui+RIGHT ARROW
+  - {t: ▽, type: trans}
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN
+  - RIGHT ARROW
+  - {t: ▽, type: trans}
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - HOME
+  - PAGE DOWN
+  - END
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - BACKSPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ','
+  - .
+  - {t: ▽, type: trans}
   '4':
   - F1
   - F2
