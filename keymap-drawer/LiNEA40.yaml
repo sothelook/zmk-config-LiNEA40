@@ -21,7 +21,7 @@ layers:
   - K
   - L
   - {t: ENTER, h: RIGHT SHIFT}
-  - Z
+  - {t: TAB, h: LEFT SHIFT}
   - X
   - C
   - V
@@ -31,13 +31,13 @@ layers:
   - ','
   - .
   - /
-  - {t: TAB, h: LEFT SHIFT}
+  - Z
   - LEFT CONTROL
   - {t: LANG2, h: LEFT ALT}
   - {t: ▽, type: trans}
   - {t: BACKSPACE, h: LEFT COMMAND}
-  - '2'
   - SPACE
+  - {t: SPACE, h: '2'}
   - {t: LANGUAGE 1, h: Func}
   - '6'
   - TAB
@@ -120,8 +120,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - PREVIOUS
   - PLAY PAUSE
