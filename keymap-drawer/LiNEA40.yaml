@@ -73,11 +73,11 @@ layers:
   - NEXT
   - UP ARROW
   - MUTE
-  - {t: ▽, type: trans}
+  - ','
   - '0'
   - .
   - {t: ▽, type: trans}
-  - ','
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
