@@ -68,11 +68,11 @@ layers:
   - '2'
   - '3'
   - '='
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - UP ARROW
-  - MUTE
+  - PLAY PAUSE
   - ','
   - '0'
   - .
