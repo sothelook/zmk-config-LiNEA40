@@ -21,7 +21,7 @@ layers:
   - K
   - L
   - {t: ENTER, h: RIGHT SHIFT}
-  - {t: TAB, h: LEFT SHIFT}
+  - Z
   - X
   - C
   - V
@@ -31,14 +31,14 @@ layers:
   - ','
   - .
   - /
-  - Z
+  - {t: TAB, h: LEFT SHIFT}
   - LEFT CONTROL
   - {t: LANG2, h: LEFT ALT}
   - {t: ▽, type: trans}
-  - {t: BACKSPACE, h: LEFT COMMAND}
-  - SPACE
+  - {t: LANG1, h: LEFT COMMAND}
+  - BACKSPACE
   - {t: SPACE, h: '2'}
-  - {t: LANGUAGE 1, h: Func}
+  - {t: ENTER, h: Func}
   - '6'
   - TAB
   - ESCAPE
