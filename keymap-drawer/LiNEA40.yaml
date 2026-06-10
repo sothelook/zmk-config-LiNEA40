@@ -35,10 +35,10 @@ layers:
   - LEFT CONTROL
   - {t: LANG2, h: LEFT ALT}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: LEFT COMMAND}
+  - LEFT COMMAND
   - BACKSPACE
   - {t: SPACE, h: '2'}
-  - {t: ENTER, h: Func}
+  - {t: LANG1, h: Func}
   - '6'
   - TAB
   - ESCAPE
