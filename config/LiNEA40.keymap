@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -133,7 +133,7 @@
 &kp Q               &kp W             &kp E               &kp R   &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A               &kp S             &kp D               &kp F   &kp G                                           &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
 &kp Z               &kp X             &kp C               &kp V   &kp B                                           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LEFT_SHIFT TAB  &kp LEFT_CONTROL  &mt LEFT_ALT LANG2  &trans  &kp LEFT_COMMAND  &kp BACKSPACE    &lt 2 SPACE  &lt 1 LANG1         &mo 3      &kp TAB  &kp ESCAPE
+&mt LEFT_SHIFT TAB  &kp LEFT_CONTROL  &mt LEFT_ALT LANG2  &trans  &kp LEFT_COMMAND  &kp BACKSPACE    &lt 2 SPACE  &lt 3 LANG1         &mo 1      &kp TAB  &kp ESCAPE
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -150,10 +150,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp AT      &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPERSAND      &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans           &trans      &trans    &kp SEMI    &kp MINUS                      &kp PLUS   &kp APOS           &trans                &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp LEFT_SHIFT   &trans      &trans    &kp APOS    &kp SQT                        &kp EQUAL  &kp LG(LESS_THAN)  &kp LG(GREATER_THAN)  &kp LS(C_VOLUME_UP)   &kp LS(C_VOLUME_DOWN)
-&studio_unlock   &caps_word  &trans    &trans      &trans       &trans    &trans  &trans                        &kp C_PREVIOUS        &kp K_PLAY_PAUSE      &kp C_NEXT
+&kp EXCLAMATION  &kp AT      &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans           &trans      &trans    &kp SEMI    &kp MINUS                      &kp PLUS   &kp APOS       &kp PIPE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans           &trans      &trans    &kp APOS    &kp SQT                        &kp EQUAL  &trans         &trans          &kp UP_ARROW          &trans
+&studio_unlock   &caps_word  &trans    &trans      &trans       &trans    &trans  &trans                    &kp LEFT_ARROW  &kp DOWN              &kp RIGHT
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -161,10 +161,10 @@
 
         WIRELESS {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &kp SLASH       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+&trans          &trans        &trans        &trans        &trans                               &kp ASTRK       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+&bt BT_CLR      &trans        &trans        &trans        &trans                               &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kt NUMBER_3  &kp PERIOD
+&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
