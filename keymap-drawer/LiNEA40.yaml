@@ -38,8 +38,8 @@ layers:
   - LEFT COMMAND
   - BACKSPACE
   - {t: SPACE, h: '2'}
-  - {t: LANG1, h: Func}
-  - '6'
+  - {t: LANG1, h: '6'}
+  - Func
   - TAB
   - ESCAPE
   Func:
@@ -80,8 +80,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - LEFT
+  - {t: ▽, type: trans}
+  - {t: LEFT, type: held}
   - DOWN
   - RIGHT
   '2':
@@ -102,19 +102,19 @@ layers:
   - '-'
   - +
   - ''''
-  - {t: ▽, type: trans}
+  - '|'
   - '['
   - ']'
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''''
   - ''''
   - '='
-  - Gui+<
-  - Gui+>
-  - Sft+VOLUME UP
-  - Sft+VOLUME DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
   - '&studio_unlock'
   - '&caps_word'
   - {t: ▽, type: trans}
@@ -123,51 +123,51 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - PREVIOUS
-  - PLAY PAUSE
-  - NEXT
+  - LEFT ARROW
+  - DOWN
+  - RIGHT
   '6':
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - +
   - BT CLR
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - {t: '3', h: toggle}
+  - .
+  - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
-  - '&studio_unlock'
-  - {type: held}
+  - {t: '&studio_unlock', type: held}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - '='
   Sym_Num:
   - {t: ▽, type: trans}
   - Ctl+Gui+LEFT ARROW
